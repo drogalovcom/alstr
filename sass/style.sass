@@ -256,9 +256,7 @@ object
 		img
 			width: 100%
 	.slogan
-		margin-top: 15px
-		p
-			padding: 0
+		margin-top: 10px
 	.head_right
 		font-size: 13px
 		padding-top: 10px
@@ -352,7 +350,7 @@ object
 
 .load
 	text-align: center
-	margin-bottom: 80px
+	margin-bottom: 40px
 
 nav
 	text-align: center
@@ -893,7 +891,7 @@ footer
 		justify-content: space-between
 		border: 1px solid #ececec
 		border-radius: 10px
-		margin-bottom: 20px
+		margin-bottom: 30px
 		&:hover
 			background-color: aliceblue
 		.image
@@ -910,10 +908,28 @@ footer
 		.info
 			width: 50%
 			padding: 15px
-		.title
-			font-size: 24px
-			font-weight: 500
-			padding-bottom: 10px
+			position: relative
+			.title
+				font-size: 24px
+				font-weight: 500
+				padding-bottom: 10px
+			.text
+				padding-bottom: 30px
+		.footer
+			bottom: 15px
+			color: $accent
+			font-size: 12px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			width: 93%
+			position: absolute
+			.btn_cat
+				text-transform: uppercase
+				text-decoration: none
 
 .fotorama--fullscreen .fotorama__nav, .fotorama--fullscreen .fotorama__stage
 	background: rgba(55, 55, 55, 0.8)

@@ -149,48 +149,56 @@
 					</div>
 				</div>
 			</section>
-			<section class="contentList">
-				<div class="itemListElement">
-					<div class="image fotorama" data-loop="true" data-allowfullscreen="true" data-fit="cover" data-ratio="16/9" data-width="100%" data-nav="thumbs">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/6e7b7621babba4fef04e8e91558de001.JPG" alt="">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/c5ed52eaf7f963faebf8f94f0a60ad69.jpg" alt="">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/ec665b0f6671e15491ceed7256a1c3f4.JPG" alt="">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/688a6703cdc450c230a0647d5cd5d44f.JPG" alt="">
-					</div>
-					<div class="info">
-						<div class="title">Здесь все работы со всех категорий</div>
-						<div class="text">Описание работы. А слева от этого заголовка и описания будет полноценная галерея, с возможностью просматривать и листать фотографии объекта. <br><br>В самом низу кнопка ПОКАЗАТЬ ЕЩЁ, при нажатии которой будут подгружаться остальные работы без перехода на следующую страницу. Удобно и практично!</div>
-					</div>
-				</div>
-				<div class="itemListElement">
-					<div class="image fotorama" data-loop="true" data-allowfullscreen="true" data-fit="cover" data-ratio="16/9" data-width="100%" data-nav="thumbs">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/373b0bb08d4c3310a3e03f848268bab9.JPG" alt="">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/535c358e5641c33191a848389bee1961.JPG" alt="">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/913df175789b6cd5bf2faa8b3115877f.JPG" alt="">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/c388580d110721d3fb2cb1ad66720d17.JPG" alt="">
-					</div>
-					<div class="info">
-						<div class="title">Здесь все работы со всех категорий</div>
-						<div class="text">Описание работы. А слева от этого заголовка и описания будет полноценная галерея, с возможностью просматривать и листать фотографии объекта. <br><br>В самом низу кнопка ПОКАЗАТЬ ЕЩЁ, при нажатии которой будут подгружаться остальные работы без перехода на следующую страницу. Удобно и практично!</div>
-					</div>
-				</div>
-				<div class="itemListElement">
-					<div class="image fotorama" data-loop="true" data-allowfullscreen="true" data-fit="cover" data-ratio="16/9" data-width="100%" data-nav="thumbs">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/3335921809e7d4931acdb6f32bc9c3fdfc9.JPG" alt="">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/6e7b7621babba4fef04e8e91558de001.JPG" alt="">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/c5ed52eaf7f963faebf8f94f0a60ad69.jpg" alt="">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/ec665b0f6671e15491ceed7256a1c3f4.JPG" alt="">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/688a6703cdc450c230a0647d5cd5d44f.JPG" alt="">
-					</div>
-					<div class="info">
-						<div class="title">Здесь все работы со всех категорий</div>
-						<div class="text">Описание работы. А слева от этого заголовка и описания будет полноценная галерея, с возможностью просматривать и листать фотографии объекта. <br><br>В самом низу кнопка ПОКАЗАТЬ ЕЩЁ, при нажатии которой будут подгружаться остальные работы без перехода на следующую страницу. Удобно и практично!</div>
-					</div>
-				</div>
+			<?php if ( have_posts() ) : ?>
+				<header class="page-header">
+					<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
+				</header><!-- .page-header -->
+				<section class="contentList">
+					<?php
+					/* Start the Loop */
+					while ( have_posts() ) :
+						the_post();
+						?>
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<div class="image fotorama" data-nav="thumbs" data-width="100%" data-ratio="800/400" data-fit="cover">
+								<?php
+								$myvalue = get_field( "gallery_shortcode" );
+								echo do_shortcode("$myvalue");
+								?>
+							</div>
+							<div class="info">
+								<header class="entry-header">
+									<?php the_title( '<div class="title">', '</div>' ); ?>
+								</header><!-- .entry-header -->
+								<div class="text">Описание работы. А слева от этого заголовка и описания будет полноценная галерея, с возможностью просматривать и листать фотографии объекта. <br><br>В самом низу кнопка ПОКАЗАТЬ ЕЩЁ, при нажатии которой будут подгружаться остальные работы без перехода на следующую страницу. Удобно и практично!</div>
+								<div class="footer">
+									<div class="category">
+										<?php $categories = get_the_category(); 
+										if($categories[0]){
+											echo '<a class="btn_cat" href="' . get_category_link($categories[0]->term_id ) . '">'. $categories[0]->name . '</a>';
+										}; ?>
+									</div>
+									<div class="date">
+										<?php the_time( 'j F Y' ); ?>
+									</div>
+								</div>
+							</div>
+							<?php alstr_post_thumbnail(); ?>
+						</article><!-- #post-<?php the_ID(); ?> -->
+					<?php endwhile;
+					the_posts_navigation();
+				else :
+					get_template_part( 'template-parts/content', 'none' );
+				endif;
+				?>
 			</section>
 			<div class="load">
 				<a class="button" href="">показать ещё</a>
 			</div>
+			<?php if ( $cat_desc = category_description() )
+			echo '<div class="cat__desc">'. $cat_desc .'</div>';
+			else
+				echo '<div class="no__cat__desc">Описание отсутствует!</div>'; ?>
 		</div> <!-- .container -->
 	</main><!-- #main -->
 </div><!-- #primary -->

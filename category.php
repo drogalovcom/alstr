@@ -29,17 +29,15 @@ get_header();
 		<main id="main" class="site-main">
 			<div class="container">
 				<?php if ( have_posts() ) : ?>
-
 					<header class="page-header">
 						<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 					</header><!-- .page-header -->
-
-					<?php
-					/* Start the Loop */
-					while ( have_posts() ) :
-						the_post();
-						?>
-						<section class="contentList">
+					<section class="contentList">
+						<?php
+						/* Start the Loop */
+						while ( have_posts() ) :
+							the_post();
+							?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<div class="image fotorama" data-nav="thumbs" data-width="100%" data-ratio="800/400" data-fit="cover">
 									<?php
@@ -52,26 +50,34 @@ get_header();
 										<?php the_title( '<div class="title">', '</div>' ); ?>
 									</header><!-- .entry-header -->
 									<div class="text">Описание работы. А слева от этого заголовка и описания будет полноценная галерея, с возможностью просматривать и листать фотографии объекта. <br><br>В самом низу кнопка ПОКАЗАТЬ ЕЩЁ, при нажатии которой будут подгружаться остальные работы без перехода на следующую страницу. Удобно и практично!</div>
+									<div class="footer">
+										<div class="category">
+											<?php $categories = get_the_category(); 
+											if($categories[0]){
+												echo '<a class="btn_cat" href="' . get_category_link($categories[0]->term_id ) . '">'. $categories[0]->name . '</a>';
+											}; ?>
+										</div>
+										<div class="date">
+											<?php the_time( 'j F Y' ); ?>
+										</div>
+									</div>
 								</div>
-								
 								<?php alstr_post_thumbnail(); ?>
-
 							</article><!-- #post-<?php the_ID(); ?> -->
-						</section>
-						<?php if ( $cat_desc = category_description() )
-						echo '<div class="cat__desc">'. $cat_desc .'</div>';
-						else
-						echo '<div class="no__cat__desc">Описание отсутствует!</div>'; ?>
-					<?php endwhile;
-
-					the_posts_navigation();
-
-				else :
-
-					get_template_part( 'template-parts/content', 'none' );
-
-				endif;
-				?>
+						<?php endwhile;
+						the_posts_navigation();
+					else :
+						get_template_part( 'template-parts/content', 'none' );
+					endif;
+					?>
+				</section>
+				<div class="load">
+					<a class="button" href="">показать ещё</a>
+				</div>
+				<?php if ( $cat_desc = category_description() )
+				echo '<div class="cat__desc">'. $cat_desc .'</div>';
+				else
+					echo '<div class="no__cat__desc">Описание отсутствует!</div>'; ?>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
