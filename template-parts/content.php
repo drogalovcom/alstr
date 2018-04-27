@@ -1,14 +1,3 @@
-<?php
-/**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package alustar
- */
-
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -20,24 +9,15 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
-				<?php the_content(); ?>
-			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-
-
-	<div class="entry-content">
-		<?php
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'alstr' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php alstr_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<div class="entry-meta">
+		<div class="image fotorama" data-nav="thumbs" data-width="100%" data-ratio="800/400" data-fit="cover">
+			<?php
+			$myvalue = get_field( "gallery_shortcode" );
+			echo do_shortcode("$myvalue");
+			?>
+		</div>
+		<?php echo get_field( 'desc' ) ?>
+	</div><!-- .entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

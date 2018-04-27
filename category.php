@@ -47,9 +47,12 @@ get_header();
 								</div>
 								<div class="info">
 									<header class="entry-header">
-										<?php the_title( '<div class="title">', '</div>' ); ?>
+										<a class="title simple-ajax-popup-align-top" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 									</header><!-- .entry-header -->
-									<div class="text">Описание работы. А слева от этого заголовка и описания будет полноценная галерея, с возможностью просматривать и листать фотографии объекта. <br><br>В самом низу кнопка ПОКАЗАТЬ ЕЩЁ, при нажатии которой будут подгружаться остальные работы без перехода на следующую страницу. Удобно и практично!</div>
+									<div class="text">
+										<?php the_excerpt(); ?>
+										<a class="simple-ajax-popup-align-top" href="<?php the_permalink() ?>">Читать далее</a>
+									</div>
 									<div class="footer">
 										<div class="category">
 											<?php $categories = get_the_category(); 
