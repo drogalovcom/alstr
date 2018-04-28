@@ -26,7 +26,6 @@
 		</div>
 		<div class="container">
 			<div class="head_nav">
-				<div class="breadcrumb"><a href="/">Главная</a>/<span>Наши проекты</span></div>
 				<div class="title">
 					<h2>Наши проекты</h2>
 				</div>
@@ -35,84 +34,84 @@
 				<div class="row">
 					<div class="col-xs-6 col-md-4">
 						<div class="item_img animated">
-							<a class="dark_block_animate" href="besedki.html">
+							<a class="dark_block_animate" href="<?php get_template_directory_uri() ?>/category/nashi-proekti/besedki/">
 							</a>
 							<div class="img" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/a48052a5cfb52adac1a2a3e71f4c3aab.jpg);">
 							</div>
 							<div class="info">
-								<a href="besedki.html" class="title">Беседки</a>
+								<a href="<?php get_template_directory_uri() ?>/category/nashi-proekti/besedki/" class="title">Беседки</a>
 								<div class="text">Благодаря алюминиевому профилю возможно изготавливать беседки угольной, прямоугольной и неправильной формы.</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-6 col-md-4">
 						<div class="item_img animated">
-							<a class="dark_block_animate" href="img/">
+							<a class="dark_block_animate" href="<?php get_template_directory_uri() ?>/category/nashi-proekti/verandy-i-terrasy/">
 							</a>
 							<div class="img" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/92901dc742633d570f926d4fb54e73b5.jpg);">
 							</div>
 							<div class="info">
-								<a href="#" class="title">Веранды и террасы</a>
+								<a href="<?php get_template_directory_uri() ?>/category/nashi-proekti/verandy-i-terrasy/" class="title">Веранды и террасы</a>
 								<div class="text">Остекление террас и веранд - это мудрый и выгодный ход, обеспечивающий комфортный отдых при любой погоде.</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-6 col-md-4">
 						<div class="item_img animated">
-							<a class="dark_block_animate" href="img/">
+							<a class="dark_block_animate" href="<?php get_template_directory_uri() ?>/category/nashi-proekti/ofisnye-peregorodki/">
 							</a>
 							<div class="img" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/a0316ad4dcaf07f447e5e59e8eaaa08d.jpg);">
 							</div>
 							<div class="info">
-								<a href="" class="title">Офисные перегородки</a>
+								<a href="<?php get_template_directory_uri() ?>/category/nashi-proekti/ofisnye-peregorodki/" class="title">Офисные перегородки</a>
 								<div class="text">Благодаря алюминиевому профилю возможно изготавливать беседки угольной, прямоугольной и неправильной формы.</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-6 col-md-4">
 						<div class="item_img animated">
-							<a class="dark_block_animate" href="img/">
+							<a class="dark_block_animate" href="<?php get_template_directory_uri() ?>/category/nashi-proekti/alyuminievye-dveri/">
 							</a>
 							<div class="img" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/ae5d246ddb402087c8074996154215b3.jpg);">
 							</div>
 							<div class="info">
-								<a href="#" class="title">Алюминиевые двери</a>
+								<a href="<?php get_template_directory_uri() ?>/category/nashi-proekti/alyuminievye-dveri/" class="title">Алюминиевые двери</a>
 								<div class="text">Основная особенность алюминиевой системы остекления Provedal - раздвижной механизм открывания створок.</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-6 col-md-4">
 						<div class="item_img animated">
-							<a class="dark_block_animate" href="img/">
+							<a class="dark_block_animate" href="<?php get_template_directory_uri() ?>/category/nashi-proekti/fasadnoe-osteklenie-vitrazhi/">
 							</a>
 							<div class="img" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/69a3933588a94f6e9a720097c9262ba8.JPG);">
 							</div>
 							<div class="info">
-								<a href="#" class="title">Фасадное остекление, витражи</a>
+								<a href="<?php get_template_directory_uri() ?>/category/nashi-proekti/fasadnoe-osteklenie-vitrazhi/" class="title">Фасадное остекление, витражи</a>
 								<div class="text">Алюминиевые витражи актуальны, практичны и эстетичны.</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-6 col-md-4">
 						<div class="item_img animated">
-							<a class="dark_block_animate" href="img/">
+							<a class="dark_block_animate" href="<?php get_template_directory_uri() ?>/category/nashi-proekti/bezramnoe-osteklenie/">
 							</a>
 							<div class="img" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/aab5683b0048c30eed9089f2a0bb60ba.JPG);">
 							</div>
 							<div class="info">
-								<a href="" class="title">Безрамное остекление</a>
+								<a href="<?php get_template_directory_uri() ?>/category/nashi-proekti/bezramnoe-osteklenie/" class="title">Безрамное остекление</a>
 								<div class="text">Безрамное остекление из алюминиевого профиля – современное направление дизайна премиум-класса.</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-6 col-md-4">
 						<div class="item_img animated">
-							<a class="dark_block_animate" href="img/">
+							<a class="dark_block_animate" href="<?php get_template_directory_uri() ?>/category/nashi-proekti/balkony-i-lodzhii/">
 							</a>
 							<div class="img" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/b8942803a22caa492b9312c819b4b155.JPG);">
 							</div>
 							<div class="info">
-								<a href="#" class="title">
+								<a href="<?php get_template_directory_uri() ?>/category/nashi-proekti/balkony-i-lodzhii/" class="title">
 									<span>Балконы, лоджии</span>
 								</a>
 								<div class="text">Основная особенность алюминиевой системы остекления Provedal - раздвижной механизм открывания створок.</div>
@@ -121,12 +120,12 @@
 					</div>
 					<div class="col-xs-6 col-md-4">
 						<div class="item_img animated">
-							<a class="dark_block_animate" href="img/">
+							<a class="dark_block_animate" href="<?php get_template_directory_uri() ?>/category/nashi-proekti/bassejny-i-teplitsy/">
 							</a>
 							<div class="img" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/9583eae785974a72aabf062fb4e513e4.JPG);">
 							</div>
 							<div class="info">
-								<a href="#" class="title">
+								<a href="<?php get_template_directory_uri() ?>/category/nashi-proekti/bassejny-i-teplitsy/" class="title">
 									<span>Бассейны и теплицы</span>
 								</a>
 								<div class="text">Остекление террас и веранд - это мудрый и выгодный ход, обеспечивающий комфортный отдых при любой погоде.</div>
@@ -135,12 +134,12 @@
 					</div>
 					<div class="col-xs-6 col-md-4">
 						<div class="item_img animated">
-							<a class="dark_block_animate" href="img/">
+							<a class="dark_block_animate" href="<?php get_template_directory_uri() ?>/category/nashi-proekti/vhodnye-gruppy/">
 							</a>
 							<div class="img" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ) ?>/img/images/07b56f51d28db175c01592d1ff2d6081.jpg);">
 							</div>
 							<div class="info">
-								<a href="" class="title">
+								<a href="<?php get_template_directory_uri() ?>/category/nashi-proekti/vhodnye-gruppy/" class="title">
 									<span>Входные группы</span>
 								</a>
 								<div class="text">Благодаря алюминиевому профилю возможно изготавливать беседки угольной, прямоугольной и неправильной формы.</div>
@@ -168,9 +167,12 @@
 							</div>
 							<div class="info">
 								<header class="entry-header">
-									<?php the_title( '<div class="title">', '</div>' ); ?>
+									<a class="title simple-ajax-popup-align-top" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 								</header><!-- .entry-header -->
-								<div class="text">Описание работы. А слева от этого заголовка и описания будет полноценная галерея, с возможностью просматривать и листать фотографии объекта. <br><br>В самом низу кнопка ПОКАЗАТЬ ЕЩЁ, при нажатии которой будут подгружаться остальные работы без перехода на следующую страницу. Удобно и практично!</div>
+								<div class="text">
+									<?php the_excerpt(); ?>
+									<a class="simple-ajax-popup-align-top" href="<?php the_permalink() ?>">Читать далее</a>
+								</div>
 								<div class="footer">
 									<div class="category">
 										<?php $categories = get_the_category(); 
