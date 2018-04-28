@@ -16,10 +16,8 @@
 							</div>
 						</div>
 						<!--<div class="video-bg"></div>-->
-						<video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%; height: 100vh; object-fit: cover;" poster="<?php echo esc_url( get_template_directory_uri() ) ?>/video/Busy-People.jpg">
-							<source src="<?php echo esc_url( get_template_directory_uri() ) ?>/video/Busy-People.mp4" type="video/mp4">
-							<source src="<?php echo esc_url( get_template_directory_uri() ) ?>/video/Busy-People.webm" type="video/webm">
-							<source src="<?php echo esc_url( get_template_directory_uri() ) ?>/video/Busy-People.ogv" type="video/ogg">
+						<video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%; height: 100vh; object-fit: cover;" poster="<?php echo esc_url( get_template_directory_uri() ) ?>/video/_DSC0270.JPG">
+							<source src="<?php echo esc_url( get_template_directory_uri() ) ?>/video/alustar.mp4" type="video/mp4">
 						</video>
 					</div>
 					<div class="swiper-slide">
