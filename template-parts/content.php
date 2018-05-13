@@ -11,7 +11,7 @@
 			?>
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-	<div class="entry-meta">
+	<div class="entry-content">
 		<div class="image fotorama" data-nav="thumbs" data-width="100%" data-ratio="800/400" data-fit="cover">
 			<?php
 			$myvalue = get_field( "gallery_shortcode" );
@@ -19,5 +19,5 @@
 			?>
 		</div>
 		<?php echo get_field( 'desc' ) ?>
-	</div><!-- .entry-meta -->
+	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

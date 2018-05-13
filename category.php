@@ -67,16 +67,16 @@ get_header();
 								</div>
 								<?php alstr_post_thumbnail(); ?>
 							</article><!-- #post-<?php the_ID(); ?> -->
-						<?php endwhile;
-						the_posts_navigation();
-					else :
+						<?php endwhile; ?>
+						<div class="pagination_block">
+							<?php if (function_exists('oriolo_pagination')) oriolo_pagination(); 
+							else posts_nav_link(); ?>
+						</div>
+					<?php else :
 						get_template_part( 'template-parts/content', 'none' );
 					endif;
 					?>
 				</section>
-				<div class="load">
-					<a class="button" href="">показать ещё</a>
-				</div>
 				<?php if ( $cat_desc = category_description() )
 				echo '<div class="cat__desc">'. $cat_desc .'</div>';
 				else

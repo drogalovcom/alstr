@@ -19,7 +19,12 @@
 				<a href="#" class="btn btn-default">WEB-DEVELOPER</a><span> | </span><a href="https://drogalov.com/" class="btn btn-warning">DROGALOV.COM</a>
 			</div>
 		</div>
-		<a href="tel:+79202022906" title="Номер телефона: +7 (920) 202-29-06">
+		<a href="#feedback_form" class="callback">
+			<div class="back-call-block__button-area">
+				<div class="back-call-block__button-icon"></div>
+			</div>
+		</a>
+		<a class="mobile_none" href="tel:<?php echo ot_get_option( 'phone' ); ?>" title="Номер телефона: <?php echo ot_get_option( 'phone' ); ?>">
 			<div class="back-call-block__button-area">
 				<div class="back-call-block__button-icon"></div>
 			</div>

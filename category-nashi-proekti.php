@@ -15,6 +15,18 @@
 					<video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%; height: 100vh; object-fit: cover;" poster="<?php echo esc_url( get_template_directory_uri() ) ?>/img/promo_main_vesna.jpg">
 					</video>
 				</div>
+				<div class="swiper-slide">
+					<div class="lab_video_text_overlay two">
+						<div class="container">
+							<h2>Лучшая цена рынка!</h2>
+							<p>Спецпредложение по остеклению<br> балконов и лоджий</p>
+							<a class="button" href="">подробнее</a>
+						</div>
+					</div>
+					<!--<div class="video-bg"></div>-->
+					<video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%; height: 100vh; object-fit: cover;" poster="<?php echo esc_url( get_template_directory_uri() ) ?>/img/promo_main_vesna.jpg">
+					</video>
+				</div>
 			</div>
 			<!-- Add Pagination -->
 			<div class="swiper-pagination"></div>
@@ -159,7 +171,7 @@
 						the_post();
 						?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<div class="image fotorama" data-nav="thumbs" data-width="100%" data-ratio="800/400" data-fit="cover">
+							<div class="image fotorama" data-nav="thumbs" data-ratio="800/400" data-fit="cover">
 								<?php
 								$myvalue = get_field( "gallery_shortcode" );
 								echo do_shortcode("$myvalue");
@@ -169,34 +181,27 @@
 								<header class="entry-header">
 									<a class="title simple-ajax-popup-align-top" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 								</header><!-- .entry-header -->
-								<div class="text">
-									<?php the_excerpt(); ?>
-									<a class="simple-ajax-popup-align-top" href="<?php the_permalink() ?>">Читать далее</a>
-								</div>
 								<div class="footer">
 									<div class="category">
-										<?php $categories = get_the_category(); 
-										if($categories[0]){
-											echo '<a class="btn_cat" href="' . get_category_link($categories[0]->term_id ) . '">'. $categories[0]->name . '</a>';
-										}; ?>
+										<a href="<?php the_permalink() ?>" class="button callback simple-ajax-popup-align-top">узнать подробнее</a>
 									</div>
 									<div class="date">
-										<?php the_time( 'j F Y' ); ?>
+										<a href="#feedback_form" class="button callback">заказать</a>
 									</div>
 								</div>
 							</div>
 							<?php alstr_post_thumbnail(); ?>
 						</article><!-- #post-<?php the_ID(); ?> -->
-					<?php endwhile;
-					the_posts_navigation();
-				else :
+					<?php endwhile; ?>
+					<div class="pagination_block">
+						<?php if (function_exists('oriolo_pagination')) oriolo_pagination(); 
+						else posts_nav_link(); ?>
+					</div>
+				<?php else :
 					get_template_part( 'template-parts/content', 'none' );
 				endif;
 				?>
 			</section>
-			<div class="load">
-				<a class="button" href="">показать ещё</a>
-			</div>
 			<?php if ( $cat_desc = category_description() )
 			echo '<div class="cat__desc">'. $cat_desc .'</div>';
 			else
