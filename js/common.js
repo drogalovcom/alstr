@@ -8,6 +8,21 @@ $(function() {
 			$('.home header#fixed').css({display: 'none'});
 		}
 	});
+
+	$('.slick').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		responsive: [
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
 	
 	var swiper = new Swiper('.swip_slider', {
 		spaceBetween: 30,

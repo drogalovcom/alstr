@@ -8,7 +8,6 @@
 						<div class="container">
 							<h2>Лучшая цена рынка!</h2>
 							<p>Спецпредложение по остеклению<br> балконов и лоджий</p>
-							<a class="button" href="">подробнее</a>
 						</div>
 					</div>
 					<!--<div class="video-bg"></div>-->
@@ -20,7 +19,6 @@
 						<div class="container">
 							<h2>Лучшая цена рынка!</h2>
 							<p>Спецпредложение по остеклению<br> балконов и лоджий</p>
-							<a class="button" href="">подробнее</a>
 						</div>
 					</div>
 					<!--<div class="video-bg"></div>-->

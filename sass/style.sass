@@ -286,7 +286,6 @@ object
 			text-decoration: none
 	.logo
 		margin: 15px 0
-		text-align: left
 		img
 			max-height: 130px
 		.company
@@ -877,7 +876,7 @@ footer
 	opacity: 1
 
 .contentList
-	margin-bottom: 60px
+	margin-bottom: 30px
 	.format-standard
 		position: relative
 		display: -webkit-flex
@@ -889,6 +888,7 @@ footer
 		border: 1px solid #ececec
 		border-radius: 10px
 		margin-bottom: 10px
+		box-shadow: 0 0 10px rgba(0,0,0,0.5)
 		&:hover
 			background-color: aliceblue
 		.image
@@ -904,19 +904,20 @@ footer
 				width: 100% !important
 				height: auto !important
 			.fotorama__nav
-				width: 50% !important
+				width: 49% !important
 				right: 0
 				display: inline-block
 				position: absolute
 				bottom: 3px
 				border-radius: 10px
+				text-align: left
 			.fotorama__thumb
 				border-radius: 5px
 			.fotorama__thumb-border
 				border-radius: 5px
 		.info
 			width: 50%
-			height: 100%
+			height: 70%
 			padding: 10px
 			position: absolute
 			right: 0
@@ -937,12 +938,18 @@ footer
 			display: flex
 			justify-content: space-between
 			position: absolute
-			bottom: 100px
+			bottom: 10px
 			width: 96%
 			.btn_cat
 				text-transform: uppercase
 				text-decoration: none
 				color: $accent
+
+	.pagination_block
+		padding: 20px 0
+
+	.slick-slider
+		margin-bottom: 60px
 
 .fotorama--fullscreen .fotorama__nav, .fotorama--fullscreen .fotorama__stage
 	background: rgba(55, 55, 55, 0.8)
@@ -980,9 +987,9 @@ footer
 
 body.category-nashi-proekti
 	.swip_slider
-		height: 60vh
+		height: 70vh
 	.lab_video_text_overlay
-		top: 45%
+		top: 50%
 		h2
 			margin: 0
 			font-size: 30px

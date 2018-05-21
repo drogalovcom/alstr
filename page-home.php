@@ -9,7 +9,7 @@
 						<div class="lab_video_text_overlay">
 							<div class="container">
 								<h2 class="animated pulse">Комплексное остекление</h2>
-								<div class="sub col-md-6 col-md-offset-3 animated slideInUp">
+								<div class="sub col-md-6 col-md-offset-3 animated slideInUp" style="display: none;">
 									<p>Осуществит качественный ребрендинг<br> вашей компании!</p>
 									<a class="button" href="">подробнее</a>
 								</div>

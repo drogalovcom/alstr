@@ -49,7 +49,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 hidden-xs head_left">
-					<a href="#">О компании</a>
+					<a href="/o-kompanii/">О компании</a>
 					<div class="header_phone">
 						<div class="phone">
 							<!-- Выводим номер телефона -->
@@ -74,7 +74,7 @@
 					<div class="slag"><?php bloginfo('description'); ?></div>-->
 				</div>
 				<div class="col-xs-7 col-sm-4 head_right">
-					<a class="mnu_contacts" href="#">Контакты</a>
+					<a class="mnu_contacts" href="/kontakty/">Контакты</a>
 					<div class="search">
 						<form method="get" action="">
 							<input type="text" class="field" value>
