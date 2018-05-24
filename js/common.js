@@ -9,19 +9,13 @@ $(function() {
 		}
 	});
 
-	$('.slick').slick({
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 3,
-		responsive: [
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-		]
+	$('.image-popup-vertical-fit').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
 	});
 	
 	var swiper = new Swiper('.swip_slider', {
@@ -139,6 +133,21 @@ $(function() {
 			alignTop: true,
 			overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
 		});
+	});
+
+	$('.slick').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		responsive: [
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
 
 	document.querySelector('.slide-1').addEventListener('click', function (e) {

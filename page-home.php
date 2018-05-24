@@ -255,22 +255,16 @@
 								</div>
 								<div class="swiper-wrapper wrap">
 									<div class="swiper-slide review_client">
-										<div class="name">Геннадий Иванович</div>
-										<p class="text">Обратился в Вашу компанию и не пожалел, внимательное, доброе, профессиональное отношение ко мне и к работе, Хочу выразить большую благодарность менеджеру Ирине Ризвановой, особо замерщику Руслану Григорьеву, а также отделу доставки и монтажникам Владимиру и Сергею добросовестные ребята, В общем Всем Большое Спасибо!</p>
+										<a class="image-popup-vertical-fit" href="<?php echo esc_url( get_template_directory_uri() ) ?>/img/personals/IMG_9488.jpg"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/personals/IMG_9488_min.jpg" alt=""></a>
+										<div class="name">Алексей Дмитриевич<br> Лагутин</div>
+										<p class="text">Генеральный директор ООО «Алюстар сервис»</p>
 									</div>
 									<div class="swiper-slide review_client">
-										<div class="name">Сергей Дрогалов</div>
-										<p class="text">Ни первый раз обращаюсь в данную компанию. Хочу выразить большую благодарность. В общем Всем Большое Спасибо!</p>
-									</div>
-									<div class="swiper-slide review_client">
-										<div class="name">Анна Лебедич</div>
-										<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, nemo? Velit repudiandae, ad nemo nobis laborum, quia ex quasi ratione. Accusantium ab ea sapiente officia. Iste sit dolore, vero itaque.оставки и монтажникам Владимиру и Сергею добросовестные ребята, В общем Всем Большое Спасибо!</p>
-									</div><div class="swiper-slide review_client">
-										<div class="name">Андрей Старов</div>
-										<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos asperiores autem suscipit est, nostrum laborum repellat dolorum cum neque. Quos debitis vel praesentium odio cum ex explicabo dolorem omnis rem!</p>
+										<a class="image-popup-vertical-fit" href="<?php echo esc_url( get_template_directory_uri() ) ?>/img/personals/IMG_9464.jpg"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/personals/IMG_9464_min.jpg" alt=""></a>
+										<div class="name">Анна Викторовна<br> Самойлова</div>
+										<p class="text">Менеджер</p>
 									</div>
 								</div>
-								<a class="button" href="">читать все отзывы</a>
 							</div>
 						</div>
 					</div>

@@ -46,7 +46,6 @@ body
 	line-height: 1.54
 	font-family: $default-font
 	letter-spacing: 0.6px
-	overflow-x: hidden
 
 h2
 	font-weight: normal
@@ -728,15 +727,20 @@ header#fixed .menu-item-118 a
 		height: 70%
 		.review_client
 			display: block
-			padding: 30px 35px
+			padding: 0px 35px
+			img
+				display: inline-block
+				max-width: 260px
+				border-radius: 50%
+				border: 5px solid #fff
 			.name
-				margin-bottom: 40px
+				margin: 35px 0 10px 0
+				font-size: 24px
 			.text
-				border-left: 1px solid #bbb
 				font-style: italic
 				margin: 1.5em 10px
 				padding: 0.5em 10px
-				font-size: 14px
+				font-size: 18px
 				&:before
 					color: #bbb;
 					content: "\201C"
@@ -987,9 +991,10 @@ footer
 
 body.category-nashi-proekti
 	.swip_slider
-		height: 70vh
+		height: 440px
+		box-shadow: 0 0 10px rgba(0,0,0,.5);
 	.lab_video_text_overlay
-		top: 50%
+		top: 30%
 		h2
 			margin: 0
 			font-size: 30px
@@ -1003,6 +1008,20 @@ body.category-nashi-proekti
 		width: auto
 		article
 			padding: 10px 0 30px
+
+.feedback_list
+	.item
+		width: 320px
+		float: left
+		.top
+			height: 15px
+			background: url(img/feedback_bg_top.png) left top no-repeat
+		.bottom
+			height: 15px
+			background: url(img/feedback_bg_bottom.png) left top no-repeat
+		.middle
+			padding: 20px 25px 25px 25px
+			background: url(img/feedback_bg_middle.png) left top repeat-y
 
 .mobile_none
 	display: none
